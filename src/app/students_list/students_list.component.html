@@ -5,3 +5,8 @@
   </li>
 </ul>
 <p *ngIf="students.length > 2">יש הרבה סטודנטים!</p>
+<ul>
+  <li *ngFor="let student of students" (click)="onStudentClick(student)">
+    {{ student.firstName }} {{ student.lastName }} - ממוצע: {{ student.average }}
+  </li>
+</ul>

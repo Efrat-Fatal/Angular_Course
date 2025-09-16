@@ -12,4 +12,9 @@ export class StudentsListComponent {
     new Student(2, 'רות', 'לוי', '050-7654321', 'בני ברק', 85, true),
     new Student(3, 'דוד', 'מזרחי', '050-3333333', 'תל אביב', 70, false),
   ];
+
+  onStudentClick(student: Student) {
+    alert(`בחרת את ${student.firstName} ${student.lastName}`);
+  }
 }
+
